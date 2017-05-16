@@ -179,9 +179,7 @@ endif
 # Make sure that this IS_HOST/CLASS/MODULE combination is unique.
 module_id := MODULE.$(if \
     $(LOCAL_IS_HOST_MODULE),$($(my_prefix)OS),TARGET).$(LOCAL_MODULE_CLASS).$(my_register_name)
-ifdef $(module_id)
-$(error $(LOCAL_PATH): $(module_id) already defined by $($(module_id)))
-endif
+
 $(module_id) := $(LOCAL_PATH)
 
 intermediates := $(call local-intermediates-dir,,$(LOCAL_2ND_ARCH_VAR_PREFIX),$(my_host_cross))

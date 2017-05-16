@@ -17,8 +17,6 @@
 PRODUCT_PROPERTY_OVERRIDES :=
 
 PRODUCT_PACKAGES := \
-	ApiDemos \
-	CubeLiveWallpapers \
 	CustomLocale \
 	Development \
 	Dialer \
